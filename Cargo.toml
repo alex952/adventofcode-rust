@@ -1,0 +1,20 @@
+[package]
+name = "adventofcode2023-rust"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+cached = "0.46.1"
+clargs = "1.0.0"
+geo = "0.27.0"
+itertools = "0.12.0"
+num = "0.4.1"
+num-derive = "0.4.1"
+num-traits = "0.2.17"
+regex = "1.10.2"
+
+[lib]
+name = "advent"
+path = "src/advent.rs"
