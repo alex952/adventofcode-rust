@@ -1,6 +1,8 @@
 mod day10;
 mod day11;
 mod day12;
+mod day15;
+mod day16;
 
 use std::env;
 
@@ -9,6 +11,8 @@ use advent::AdventRunnable;
 use day10::Day10Runnable;
 use day11::Day11Runnable;
 use day12::Day12Runnable;
+use day15::Day15Runnable;
+use day16::Day16Runnable;
 
 
 pub fn get_runnable(day: i32) -> Option<Box<dyn AdventRunnable>> {
@@ -16,6 +20,8 @@ pub fn get_runnable(day: i32) -> Option<Box<dyn AdventRunnable>> {
         10 => Some(Box::new(Day10Runnable)),
         11 => Some(Box::new(Day11Runnable)),
         12 => Some(Box::new(Day12Runnable)),
+        15 => Some(Box::new(Day15Runnable)),
+        16 => Some(Box::new(Day16Runnable)),
         _ => None
     }
 }
